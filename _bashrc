@@ -117,5 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 clear
-python3 randomMessage.py | python3 figletRandomFont.py | lolcat
+python3 ~/randomMessage.py | python3 ~/figletRandomFont.py | lolcat
 
