@@ -23,7 +23,9 @@ messages = [
    "Pop! OS",
    "BIG DICK",
    "COCKSUCKER!",
-   "Oh My!"
+   "Oh My!",
+   "ABCDEFG",
+   "VI myfile"
    ]
 
 print( random.choice(messages) )

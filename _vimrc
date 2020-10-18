@@ -4,19 +4,16 @@
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   autocmd VimEnter * PlugInstall -sync | source $MYVIMRC
 endif
 
 " Load the plugins
 call plug#begin('~/.vim/plugged')
-  Plug 'preservim/nerdtree'
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
+   Plug 'preservim/nerdtree'
+   Plug 'vim-airline/vim-airline'
+   Plug 'vim-airline/vim-airline-themes'
+   Plug 'mbbill/undotree'
 call plug#end()
-
-" Run PlugInstall if there are missing plugins
-if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-   autocmd VimEnter * PlugInstall -sync | source $MYVIMRC
-endif
 
 " ############################################################################
 " AirLine Configuration
@@ -115,10 +112,13 @@ nnoremap <leader>wx <C-W>x
 " ############################################################################
 " Other Mappings
 
-" \ev edit or \sv source .vimrc
+" <leader>ev edit or <leader>sv source .vimrc
 nnoremap <leader>ev :edit $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
-" \nt toggle NERDTree on/off
+" <leader>nt toggle NERDTree on/off
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
+
+" <leader>ut toggle Undotree on/off
+nnoremap <leader>ut :UndotreeToggle<CR>

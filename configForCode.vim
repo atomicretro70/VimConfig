@@ -6,6 +6,10 @@ colorscheme elflord
 set background=dark  " background color brightness "dark" or "light"
 set t_Co=256         " use 256 colors color-space
 
+" ##############
+" Map Leader Key
+set mapleader = "\"
+
 " #######
 " ### GUI
 if has('gui_running')
@@ -53,9 +57,15 @@ nnoremap <CR>    <CR>
 nnoremap <F1>    <F1>
 nnoremap <F2>    <F2>
 nnoremap <F3>    <F3>
+nnoremap <F4>    <F4>
+nnoremap <F5>    <F5>
+nnoremap <F6>    <F6>
+nnoremap <F7>    <F7>
+nnoremap <F8>    <F8>
 nnoremap <F9>    <F9>
 nnoremap <F10>   <F10>
 nnoremap <F11>   <F11>
+nnoremap <F12>   <F12>
 nnoremap <Up>    <Up>
 nnoremap <Down>  <Down>
 nnoremap <Left>  <Left>
