@@ -119,6 +119,6 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 " <leader>nt toggle NERDTree on/off
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
-
 " <leader>ut toggle Undotree on/off
 nnoremap <leader>ut :UndotreeToggle<CR>
+
