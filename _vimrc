@@ -9,10 +9,11 @@ endif
 
 " Load the plugins
 call plug#begin('~/.vim/plugged')
-   Plug 'preservim/nerdtree'
-   Plug 'vim-airline/vim-airline'
-   Plug 'vim-airline/vim-airline-themes'
-   Plug 'mbbill/undotree'
+   Plug 'junegunn/vim-plug'                " enables help on vim
+   Plug 'preservim/nerdtree'               " install nerdtree
+   Plug 'vim-airline/vim-airline'          " install vim-airline
+   Plug 'vim-airline/vim-airline-themes'   " install airline themes
+   Plug 'mbbill/undotree'                  " install undotree
 call plug#end()
 
 " ############################################################################

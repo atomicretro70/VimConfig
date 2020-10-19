@@ -8,7 +8,7 @@ set t_Co=256         " use 256 colors color-space
 
 " ##############
 " Map Leader Key
-set mapleader = "\"
+let mapleader = "\\"
 
 " #######
 " ### GUI
