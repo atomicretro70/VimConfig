@@ -10,9 +10,9 @@ endif
 " Load the plugins
 call plug#begin('~/.vim/plugged')
    Plug 'junegunn/vim-plug'                " enables help on vim
-   Plug 'preservim/nerdtree'               " install nerdtree
    Plug 'vim-airline/vim-airline'          " install vim-airline
    Plug 'vim-airline/vim-airline-themes'   " install airline themes
+   Plug 'preservim/nerdtree'               " install nerdtree
    Plug 'mbbill/undotree'                  " install undotree
 call plug#end()
 
@@ -46,7 +46,7 @@ augroup END
 " Have NERDTree show dot files by default
 let NERDTreeShowHidden = 1
 
-" Have NERDTree split close after opening a file
+" Have NERDTree viewport close after opening a file
 let g:NERDTreeQuitOnOpen = 1
 
 " ############################################################################
@@ -58,21 +58,21 @@ elseif has("linux")
 endif
 
 " Define Commands for swapping configurations
-command! Prose  source $VIMHOMEROOT/configForProse.vim
 command! Code   source $VIMHOMEROOT/configForCode.vim
+command! Prose  source $VIMHOMEROOT/configForProse.vim
 command! Slides source $VIMHOMEROOT/configForSlides.vim
 
-" 'Code' is our default configuration
+" Call 'Code' which is our default configuration
 Code
 
 " ############################################################################
 " Mappings for Tabs
 
 " Setup shortcuts for working with tabs.  All use nnoremap or
-" normal mode noremap.  This makes the mapping effective only in normal
-" mode and doesn't allow recursion of mappings.
+" normal no recursion mode map.  This makes the mapping effective only in
+" normal mode and doesn't allow recursion of mappings.
 
-"tn makes a new tab, tc closes the current tab
+" tn makes a new tab, tc closes the current tab
 nnoremap <leader>tn :tab-new<CR>
 nnoremap <leader>tc :tabclose<CR>
 
@@ -85,7 +85,7 @@ nnoremap <leader>t< :tabmove -<CR>
 nnoremap <leader>t> :tabmove +<CR>
 
 " ############################################################################
-" Mappings for window splits
+" Mappings for splits and viewports
 
 " Speed up moving between window splits so we don't have to press ctrl
 " wn creates a new split (above this one)
@@ -104,8 +104,8 @@ nnoremap <leader>wl <C-W>l
 " w= makes all splits equal size
 " w+,w- increase/decrease the size of the current split
 nnoremap <leader>w= <C-W>=
-nnoremap <leader>w+ <C-W>+
-nnoremap <leader>w- <C-W>-
+nnoremap <leader>w+ :resize +3
+nnoremap <leader>w- :resize -3
 
 " wx swapps this split with the next one
 nnoremap <leader>wx <C-W>x
