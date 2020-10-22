@@ -118,4 +118,6 @@ fi
 
 clear
 python3 ~/randomMessage.py | python3 ~/figletRandomFont.py | lolcat
+alias vi='nvim'
+
 

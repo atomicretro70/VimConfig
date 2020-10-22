@@ -51,9 +51,9 @@ let g:NERDTreeQuitOnOpen = 1
 
 " ############################################################################
 " Swapping configuration: Code, Prose, Slides
-if ("win32") || has("win64")
+if has("win32") || has("win64")
    let $VIHOMEROOT="$HOME/vimfiles"
-elseif has("linux")
+elseif has("unix")
    let $VIMHOMEROOT="$HOME/.vim"
 endif
 

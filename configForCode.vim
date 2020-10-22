@@ -13,11 +13,11 @@ let mapleader = "\\"
 " #######
 " ### GUI
 if has('gui_running')
-
    if has("win32") || has("win64")
       set guifont=Lucida_Console:h8:cANSI
    elseif has("linux")
-      set guifont=Monospace\ 8
+      set guifont=Inconsolata-dz\ for\ Powerline\ 8
+      "set guifont=Monospace\ 8
       " To change this setting we can always type :set guifont?
       " to dislay the current font name
    endif
@@ -25,21 +25,22 @@ endif
 
 " Unicode / ASCII
 set encoding=utf-8 " character encoding used in Vim: "latin1", "utf-8"
-set nolist         " show tab as ^I and \n as $
 set listchars=tab:▶▶,eol:↲
+set nolist         " show tab, and nl characters as set in listchars
    " when 'list' is set, display the tab and eol characters as follows
    "    tab:  ▶▶  (unicode u25b6 u2192)
    "    eol:  ↲   (unicode u21b2)
 
 " Window Dimensions
-set columns=100    " width of the display
+set columns=86     " width of the display
 set colorcolumn=79 " place a vertical color string in the selected column
 set lines=50       " num lines in the display
 set report=2       " show msg when n number of lines are affected by an edit
 
 " Things to display on screen
-set ruler          " show the cursor position all the time
-set showmode       " more info in the status line
+"    ** Don't need this we have airline-vim **
+"set ruler          " show the cursor position all the time
+"set showmode       " more info in the status line
 
 set number         " show/don't show line numbers 
 set relativenumber " Show line numbers realtive to the cursor's current line
