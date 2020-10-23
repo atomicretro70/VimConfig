@@ -52,18 +52,21 @@ let g:NERDTreeQuitOnOpen = 1
 " ############################################################################
 " Swapping configuration: Code, Prose, Slides
 if has("win32") || has("win64")
-   let $VIHOMEROOT="$HOME/vimfiles"
+   let $VIMROOT="$HOME/vimfiles"
 elseif has("unix")
-   let $VIMHOMEROOT="$HOME/.vim"
+   let $VIMROOT="$HOME/.vim"
 endif
 
 " Define Commands for swapping configurations
-command! Code   source $VIMHOMEROOT/configForCode.vim
-command! Prose  source $VIMHOMEROOT/configForProse.vim
-command! Slides source $VIMHOMEROOT/configForSlides.vim
+command! Code   source $VIMROOT/configForCode.vim
+command! Prose  source $VIMROOT/configForProse.vim
+command! Slides source $VIMROOT/configForSlides.vim
 
 " Call 'Code' which is our default configuration
 Code
+
+" Call 'abbreviations.vim' to load all my abbreviations
+source $VIMROOT/abbreviations.vim
 
 " ############################################################################
 " Mappings for Tabs
@@ -94,6 +97,7 @@ nnoremap <leader>t> :tabmove +<CR>
 nnoremap <leader>wn :spl<CR>
 nnoremap <leader>wv :vs<CR>
 nnoremap <leader>wc <C-W>c
+nnoremap <leader>wo <C-w>o
 
 " wh,wj,wk,wl moves to the next split in the indicated direction
 nnoremap <leader>wh <C-W>h
@@ -122,4 +126,13 @@ nnoremap <leader>nt :NERDTreeToggle<CR>
 
 " <leader>ut toggle Undotree on/off
 nnoremap <leader>ut :UndotreeToggle<CR>
+
+" ############################################################################
+" Remap TAB to ESC
+"
+" in normal, visual, select and op-pending modes
+noremap  <TAB>   <ESC>
+
+" in insert and command-line modes
+noremap! <TAB>   <ESC>
 

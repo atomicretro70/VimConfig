@@ -1,5 +1,5 @@
 " First go back to our qconfig mode (which is code).
-source $VIMHOMEROOT/configForCode.vim
+source $VIMROOT/configForCode.vim
 
 " ######################################################
 " ### Settings Specific to Using VIM as a Word Processor
