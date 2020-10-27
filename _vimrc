@@ -108,8 +108,8 @@ nnoremap <leader>wl <C-W>l
 " w= makes all splits equal size
 " w+,w- increase/decrease the size of the current split
 nnoremap <leader>w= <C-W>=
-nnoremap <leader>w+ :resize +3
-nnoremap <leader>w- :resize -3
+nnoremap <leader>w+ :resize +5
+nnoremap <leader>w- :resize -5
 
 " wx swapps this split with the next one
 nnoremap <leader>wx <C-W>x
