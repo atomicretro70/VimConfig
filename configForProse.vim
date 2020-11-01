@@ -1,4 +1,4 @@
-" First go back to our qconfig mode (which is code).
+" First go back to our default configuration mode (which is code).
 source $VIMROOT/configForCode.vim
 
 " ######################################################
@@ -11,7 +11,7 @@ set gdefault        " use the 'g' flag for ":substitute"
 
 " ### Geometry and Display Characteristics
 set nonumber        " show/don't show line numbers
-set norelativenumber " Show line numbers realtive to the cursor's current line
+set norelativenumber " Show line numbers relative to the cursor's current line
 
 " ### Word Processing Specific
 set spell spelllang=en_us
@@ -22,4 +22,5 @@ set showmode
 set showcmd
 set nohidden
 set ruler
+
 

@@ -53,9 +53,13 @@ let g:NERDTreeQuitOnOpen = 1
 " Swapping configuration: Code, Prose, Slides
 if has("win32") || has("win64")
    let $VIMROOT="$HOME/vimfiles"
+   set shell=c:\windows\system32\cmd.exe
 elseif has("unix")
    let $VIMROOT="$HOME/.vim"
+   set shell=/bin/bash
 endif
+
+let mapleader = "\\"
 
 " Define Commands for swapping configurations
 command! Code   source $VIMROOT/configForCode.vim
