@@ -38,6 +38,8 @@ set report=2       " show msg when n number of lines are affected by an edit
 
 set cmdheight=1    " set command line to one lines high
 
+set cursorline     " highlight the cursor's current line
+
 " Line Numbering
 set number         " show/don't show line numbers 
 set relativenumber " Show line numbers realtive to the cursor's current line
@@ -70,6 +72,8 @@ set noterse        " on: display shorter error messages
 
 " ###################
 " ### Using the Mouse
+set mouse=a            " enable mouse selection in most modes
+set mousefocus         " focus follows mouse
 set mousemodel=extend  " what the right mouse button is used for
 set mousehide          " hide the mouse pointer while typing
 
@@ -148,7 +152,7 @@ set noedcompatible  " 'g' and 'c' flags of ":substitute" toggle
 
 set directory=.,$TEMP
 set noinsertmode   " on: use insert mode as the default mode
-set clipboard=unnamed " select which default clipboard to use
-                      "   ('unnamed' means use system clipboard
-                      "    instead of the unnamed default)
+set clipboard=unnamed      " select which default clipboard to use
+set clipboard+=unnamedplus " ('unnamed' means use system clipboard
+                           "    instead of the unnamed default)
 

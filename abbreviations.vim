@@ -1,64 +1,48 @@
 
 " Greek Letters
-abbrev ualf  α
-abbrev ubet  β
-abbrev uGAM  Γ
-abbrev uTHE  Θ
-abbrev uPHI  Φ
-abbrev uPSI  Ψ
+abbrev jja   α
+abbrev jjb   β
+abbrev jjG   Γ
+abbrev jjH   Θ
+abbrev jjF   Φ
+abbrev jjQ   Ψ
 
 " Logical Symbols
-abbrev ulno  ¬
-abbrev ulnt  ￢
-abbrev ultl  ～
-abbrev ulan  ∧
-abbrev ulor  ∨
-abbrev ulif  →
-abbrev ulio  ↔
-abbrev ulof  ←
-abbrev ulfa  ∀
-abbrev ulte  ∃
-abbrev ulbx  □
-abbrev uldi  ◇
-abbrev ulfx  ▪
-abbrev ulfd  ◆
-abbrev ulin  ⊢
-abbrev ulsa  ⊨
-abbrev ultt  ⊤
-abbrev ulff  ⊥
-abbrev ultf  ∴
-abbrev ulbc  ∵
-abbrev ulmo  𝕸
-
-" Set Theory Symbols
-abbrev usin  ⋂
-abbrev usun  ⋃
-abbrev usps  ⊂
-abbrev usss  ⊆
-abbrev uspp  ⊃
-abbrev usps  ⊇
-abbrev usnl  ∅
-abbrev usel  ∊
+abbrev jj-   ￢
+abbrev jj^   ∧
+abbrev jjv   ∨
+abbrev jj>   →
+abbrev jj=   ↔
+abbrev jjA   ∀
+abbrev jjE   ∃
+abbrev jji   ℩
+abbrev jj[   □
+abbrev jj<   ◇
+abbrev jje   ⊢
+abbrev jjs   ⊨
+abbrev jj1   ⊤
+abbrev jj0   ⊥
+abbrev jj.   ∴
 
 " Math Symbols
-abbrev umne  ≠
-abbrev umle  ≤
-abbrev umge  ≥
+abbrev jjne  ≠
+abbrev jjle  ≤
+abbrev jjge  ≥
 
 " Box Drawing Symbols
-abbrev ubtl  ┌
-abbrev ubtr  ┐
-abbrev ubhz  ─
-abbrev ubvt  │
-abbrev ubhd  ┬
-abbrev ubhu  ┴
-abbrev ubpl  ┼
-abbrev ubvr  ├
-abbrev ubvl  ┤
-abbrev ubbl  └
-abbrev ubbr  ┘
+abbrev jjtl  ┌
+abbrev jjtr  ┐
+abbrev jjhz  ─
+abbrev jjvt  │
+abbrev jjhd  ┬
+abbrev jjhu  ┴
+abbrev jjpl  ┼
+abbrev jjvr  ├
+abbrev jjvl  ┤
+abbrev jjbl  └
+abbrev jjbr  ┘
 
-abbrev ubdh  ═
-abbrev ubdv  ║
+abbrev jjdh  ═
+abbrev jjdv  ║
 
 
